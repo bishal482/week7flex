@@ -1,0 +1,133 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content styles */
+.main-content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 15px;
+    flex-basis: 25%;
+}
+
+.content-area {
+    background-color: #fff;
+    padding: 15px;
+    flex-basis: 75%;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        flex-basis: 100%;
+    }
+
+    .content-area {
+        flex-basis: 100%;
+    }
+}
+/* Styling for the content-area image */
+.content-area .content-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+/* Sidebar image styling */
+.sidebar .sidebar-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+}
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Social media links in the footer */
+footer .social-media {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-media li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .social-media li a:hover {
+    text-decoration: underline;
+}
